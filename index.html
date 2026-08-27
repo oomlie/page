@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>daze.lol — Infrastructure & Services</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="daze.lol — Infrastructure & Services">
+<meta property="og:description" content="Personal cloud infrastructure, systems administration, and self-hosted microservices on daze.lol">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://daze.lol/">
+<meta property="og:image" content="https://daze.lol/phildaze.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="684">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/ComicMono.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+	@font-face {
+		font-family: Comic Mono;
+		src: url(fonts/ComicMono.ttf) format(truetype);
+		font-weight: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: Comic Mono;
+		src: url(fonts/ComicMono-Bold.ttf) format(truetype);
+		font-weight: bold;
+		font-display: swap;
+	}
+	body {
+		font-family: Comic Mono, monospace;
+		margin: 2rem;
+		max-width: 960px;
+	}
+	header {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		margin-bottom: 1.5rem;
+	}
+	header img {
+		width: 80px;
+		height: 85px;
+		object-fit: cover;
+		border-radius: 6px;
+		flex-shrink: 0;
+	}
+	h1 {
+		margin: 0;
+		font-size: 2rem;
+		line-height: 1.1;
+	}
+	.subtitle {
+		margin-top: 0.35rem;
+		color: #555;
+		font-size: 0.95rem;
+	}
+	pre {
+		white-space: pre;
+		font-family: Comic Mono, monospace;
+		line-height: 1.25;
+		overflow-x: auto;
+	}
+	details {
+		margin-bottom: 1rem;
+	}
+	summary {
+		cursor: pointer;
+		font-weight: bold;
+		user-select: none;
+	}
+</style>
+</head>
+<body>
+
+<header>
+	<picture>
+		<source srcset="phildaze.webp" type="image/webp">
+		<img src="phildaze.png" alt="Dr. Phil holding Daze" width="80" height="85" fetchpriority="high">
+	</picture>
+	<div>
+		<h1>daze.lol</h1>
+		<div class="subtitle">Personal Systems &amp; Infrastructure Portal</div>
+	</div>
+</header>
+
+<details open>
+<summary>About &amp; Contact</summary>
+<pre>
+Parker Wunderlich
+Location:    Washington, D.C.
+Email:       <a href="mailto:ptwund@gmail.com">ptwund@gmail.com</a>
+Resume:      <a href="https://resume.daze.lol/">resume.daze.lol</a>
+GitHub:      <a href="https://github.com/oomlie">github.com/oomlie</a>
+LinkedIn:    <a href="https://linkedin.com/in/parkerwunderlich">linkedin.com/in/parkerwunderlich</a>
+Domain:      daze.lol
+</pre>
+</details>
+
+<details open>
+<summary>Hosted Services</summary>
+<pre>
+daze.lol
+├── Portfolio &amp; Web
+│   └── <a href="https://resume.daze.lol/">resume.daze.lol</a>     Executive Resume &amp; Web Portfolio (RenderCV)
+├── AI &amp; Intelligence
+│   ├── <a href="https://route.daze.lol/">route.daze.lol</a>      CLI Proxy API — Multi-account AI model gateway &amp; load balancer
+│   ├── <a href="https://crawl.daze.lol/">crawl.daze.lol</a>      Firecrawl API — Automated web scraping &amp; structured extraction
+│   ├── <a href="https://halo.daze.lol/">halo.daze.lol</a>       DeepSeek Harness — Web interface &amp; local LLM inference gateway
+│   └── <a href="https://search.daze.lol/">search.daze.lol</a>     SearXNG — Privacy-focused metasearch engine
+├── Code &amp; DevOps
+│   ├── <a href="https://plan.daze.lol/">plan.daze.lol</a>       Plane — Agile project management &amp; issue tracking platform
+│   ├── <a href="https://knot.daze.lol/">knot.daze.lol</a>       Tangled Knot — Decentralized Git collaboration on ATProto (<a href="https://tangled.sh/">what is Tangled?</a>)
+│   ├── <a href="https://spindle.daze.lol/">spindle.daze.lol</a>    Tangled Spindle — CI/CD build runner for Tangled repositories
+│   └── <a href="https://knot-ssh.daze.lol/">knot-ssh.daze.lol</a>   Secure SSH gateway for Tangled git transport
+├── Storage &amp; Data
+│   ├── <a href="https://drive.daze.lol/">drive.daze.lol</a>      SFTPGo — Cloud storage portal, media server &amp; file manager
+│   └── <a href="https://drop.daze.lol/">drop.daze.lol</a>       Ephemeral File Host — Automated temporary upload gateway
+│       └── curl -Ffile=@file.txt <a href="https://drop.daze.lol/">https://drop.daze.lol/</a>
+├── Federated Identity &amp; Social
+│   ├── <a href="https://pds.daze.lol/">pds.daze.lol</a>        ATProtocol PDS — Federated Personal Data Server
+│   ├── <a href="https://hope.daze.lol/">hope.daze.lol</a>       Bluesky PDS — Isolated personal Bluesky identity node
+│   └── <a href="https://tasks.daze.lol/">tasks.daze.lol</a>      ATProtocol Task Board — Distributed task management protocol
+└── Shortcuts &amp; Utilities
+    ├── <a href="https://fish.daze.lol/">fish.daze.lol</a>       → MTGGoldfish market analytics
+    ├── <a href="https://mox.daze.lol/">mox.daze.lol</a>        → Moxfield deckbuilder platform
+    └── <a href="https://scryphil.daze.lol/">scryphil.daze.lol</a>   Scryfall card search utility
+</pre>
+</details>
+
+<details>
+<summary>System Architecture &amp; Platform Infrastructure</summary>
+<pre>
+Host Node:           Dedicated NixOS Linux host ("halo") powered by AMD Strix Halo hardware.
+Container Runtime:   Rootless Podman container orchestration and systemd user daemons.
+Edge Ingress:        Cloudflare Tunnel (Zero Trust) with automated edge SSL/TLS termination.
+Access Control:      Cloudflare Access SSO identity integration enforcing granular policy rules.
+Observability:       Centralized system log aggregation, daemon monitoring, and health checks.
+Data Persistence:    Isolated volume mounts, automated backup routines, and encrypted data stores.
+</pre>
+</details>
+
+<hr>
+<p style="font-size: 0.85rem; color: #666;">Personal systems infrastructure. Hosted on daze.lol for personal use.</p>
+
+</body>
+</html>
